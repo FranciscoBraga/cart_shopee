@@ -1,9 +1,25 @@
-### objetivo
+# Carrinho de Compras
 
-Criar um carrinho de compra baseado no carrinho de compra na shoppe. aonde o carrinho armazene itens  e faça  o cálculo de sub-itens automaticamente.
+## objetivo
 
-//dominio da aplicação : carrinho  de compras
+Este projeto tem como objetivo criar um carrinho de compras inspirado no carrinho de compras da Shopee. O carrinho deve ser capaz de armazenar itens e calcular automaticamente os subtotais dos itens.
 
-//as entidades  representadas 
+
+### Domínio da Aplicação
+
+//  carrinho  de compras
+
+### Entidades Representadas
 //carrinho 
 //itens
+
+### métodos do carrinho
+//adicionar item no carrinho
+//calcula o total
+//deletar um item 
+//deletar um item pelo index
+//cupom fiscal
+
+### itens
+
+//criar item com subtotal certo
