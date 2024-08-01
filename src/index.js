@@ -32,4 +32,10 @@ const item2 = await createItem("Lamborghini",500000.000,2)
 
  await cartService.displayCart(myCart)
 
-await cartService.calculateTotal(myCart)
+console.log("\nshopee cart is")
+
+ let result = await cartService.calculateTotal(myCart)
+
+ console.log(`\n🎁${result}`)
+
+await payment.paymentCart(myCart,10,10000000,3,result)

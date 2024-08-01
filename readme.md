@@ -12,6 +12,7 @@ Este projeto tem como objetivo criar um carrinho de compras inspirado no carrinh
 ### Entidades Representadas
 //carrinho 
 //itens
+//pagamento
 
 ### métodos do carrinho
 //adicionar item no carrinho
@@ -23,3 +24,7 @@ Este projeto tem como objetivo criar um carrinho de compras inspirado no carrinh
 ### itens
 
 //criar item com subtotal certo
+
+### itens
+
+//método para tratar o pagamento com cartão de crédito
