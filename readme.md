@@ -7,24 +7,26 @@ Este projeto tem como objetivo criar um carrinho de compras inspirado no carrinh
 
 ### Domínio da Aplicação
 
-//  carrinho  de compras
+ carrinho  de compras
 
 ### Entidades Representadas
-//carrinho 
-//itens
-//pagamento
+
+- carrinho 
+- itens
+- pagamento
 
 ### métodos do carrinho
-//adicionar item no carrinho
-//calcula o total
-//deletar um item 
-//deletar um item pelo index
-//cupom fiscal
+
+- adicionar item no carrinho
+- calcula o total
+- deletar um item 
+- deletar um item pelo index
+- cupom fiscal
 
 ### itens
 
-//criar item com subtotal certo
+-criar item com subtotal certo
 
 ### itens
 
-//método para tratar o pagamento com cartão de crédito
+- método para tratar o pagamento com cartão de crédito
