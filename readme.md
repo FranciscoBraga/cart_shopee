@@ -21,10 +21,10 @@ Este projeto tem como objetivo criar um carrinho de compras inspirado no carrinh
 //deletar um item pelo index
 //cupom fiscal
 
-### itens
+### métodos do itens
 
 //criar item com subtotal certo
 
-### itens
+### métodos do pagamento
 
 //método para tratar o pagamento com cartão de crédito
