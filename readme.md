@@ -25,7 +25,7 @@ Este projeto tem como objetivo criar um carrinho de compras inspirado no carrinh
 
 ### itens
 
--criar item com subtotal certo
+- criar item com subtotal certo
 
 ### itens
 
