@@ -1,5 +1,6 @@
 import createItem from "./services/item.js"
 import * as cartService from "./services/cart.js"
+import * as payment from "./services/payment.js"
 
 const myCart = []
 
