@@ -5,7 +5,6 @@ async function paymentCart(userCart,qtaMoeda,cardLimit,parcel,subTotal){
   console.log(`\n Shopee payment:`)
     let juros = Number(amountParcel(parcel));
     const total = (subTotal - qtaMoeda) +  juros;
-   console.log( amountParcel(parcel))
     if(card(cardLimit,total)){
         displayPayment(userCart,total,juros);
     }else{
@@ -31,10 +30,10 @@ async function paymentCart(userCart,qtaMoeda,cardLimit,parcel,subTotal){
 //nota fiscal
  function displayPayment(userCart, total,juros){
   userCart.forEach((item,index) => {
-    console.log(`${index+1} - ${item.name} - R$ ${item.price } * ${item.quantity} | SubTotal = ${item.subTotal()}
-    Juros do parcelamento: ${juros} reais
-    Valor Total: ${total} reais `);
+    console.log(`${index+1} - ${item.name} - R$ ${item.price } * ${item.quantity} | SubTotal = ${item.subTotal()}`);
   });
+  console.log(`Juros do parcelamento: ${juros} reais
+    Valor Total: ${total} reais `)
 }
 
 export {paymentCart}

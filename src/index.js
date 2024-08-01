@@ -7,7 +7,7 @@ const myCart = []
 console.log("Welacome to the your shopee cart")
 
 const item1 = await createItem("Ferrari",100,1);
-const item2 = await createItem("Lamborghini",500,2)
+const item2 = await createItem("Lamborghini",50,2)
 
  await cartService.addItem(myCart,item1)
  await cartService.addItem(myCart,item2)
@@ -22,7 +22,7 @@ const item2 = await createItem("Lamborghini",500,2)
 
  await cartService.displayCart(myCart)
 
- await cartService.removeItem(myCart,item2)
+ //await cartService.removeItem(myCart,item2)
 
 
  await cartService.displayCart(myCart)
@@ -38,4 +38,4 @@ console.log("\nshopee cart is")
 
  console.log(`\n🎁${result}`)
 
-await payment.paymentCart(myCart,10,1000,7,result)
+await payment.paymentCart(myCart,10,1000,9,result)
