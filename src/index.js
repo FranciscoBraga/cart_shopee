@@ -6,8 +6,8 @@ const myCart = []
 
 console.log("Welacome to the your shopee cart")
 
-const item1 = await createItem("Ferrari",250300.300,1);
-const item2 = await createItem("Lamborghini",500000.000,2)
+const item1 = await createItem("Ferrari",100,1);
+const item2 = await createItem("Lamborghini",500,2)
 
  await cartService.addItem(myCart,item1)
  await cartService.addItem(myCart,item2)
@@ -38,4 +38,4 @@ console.log("\nshopee cart is")
 
  console.log(`\n🎁${result}`)
 
-await payment.paymentCart(myCart,10,10000000,3,result)
+await payment.paymentCart(myCart,10,1000,7,result)

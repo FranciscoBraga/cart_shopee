@@ -3,36 +3,38 @@
 //inclui moedas para obter desconto
 async function paymentCart(userCart,qtaMoeda,cardLimit,parcel,subTotal){
   console.log(`\n Shopee payment:`)
-    const total = (subTotal - qtaMoeda) * amountParcel(parcel) ;
-
+    let juros = Number(amountParcel(parcel));
+    const total = (subTotal - qtaMoeda) +  juros;
+   console.log( amountParcel(parcel))
     if(card(cardLimit,total)){
-        displayPayment(userCart,total)
+        displayPayment(userCart,total,juros);
     }else{
-      console.log('Problemas com seu cartão de crédito')
+      console.log('Problemas com seu cartão de crédito');
     }
 }
 //verificar a quantidade de parcelas
   function amountParcel(parcel){
     if(parcel > 3){
-        return 0.2 * parcel
+        return (0.2 * parcel).toFixed(2);
     }
-    return 1
+    return 0;
 }
 
 //liberar ou não pagamento conforme o limite do cartão
   function card(cardLimit,total){
   if(cardLimit < total){
-    return false
+    return false;
   }
-  return true
+  return true;
 }
 
 //nota fiscal
- function displayPayment(userCart, total){
+ function displayPayment(userCart, total,juros){
   userCart.forEach((item,index) => {
-    console.log(`${index+1} - ${item.name} - R$ ${item.price } * ${item.quantity} | SubTotal = ${item.subTotal()} `)
+    console.log(`${index+1} - ${item.name} - R$ ${item.price } * ${item.quantity} | SubTotal = ${item.subTotal()}
+    Juros do parcelamento: ${juros} reais
+    Valor Total: ${total} reais `);
   });
-  console.log(`\nValor Total: ${total}`)
 }
 
 export {paymentCart}
